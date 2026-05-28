@@ -12,6 +12,12 @@ body{
     border-radius: 10px;
 }
 
+.titulo {
+    text-align: center;
+    margin-top: 3px;
+    
+}
+
 input{
     width: 95%;
     padding: 10px;
