@@ -14,6 +14,7 @@ $resultado = mysqli_query($conexion, $mostrar);
         <th>Nombre</th>
         <th>Precio</th>
         <th>Stock</th>
+        <th>Acciones</th>
     </tr>
 
     <?php while($fila = mysqli_fetch_assoc($resultado)){ ?>
@@ -23,6 +24,19 @@ $resultado = mysqli_query($conexion, $mostrar);
         <td><?php echo $fila['nombre']; ?></td>
         <td><?php echo $fila['precio']; ?></td>
         <td><?php echo $fila['stock']; ?></td>
+        <td>
+
+            <a href="editar.php?id=<?php echo $fila['id']; ?>">
+                Editar
+            </a>
+
+            |
+
+            <a href="eliminar.php?id=<?php echo $fila['id']; ?>">
+                Eliminar
+            </a>
+
+        </td>
     </tr>
 
     <?php } ?>
