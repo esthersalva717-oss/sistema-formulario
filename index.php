@@ -13,7 +13,7 @@
 
 <div class="contenedor">
 
-    <h2>Formulario</h2>
+    <h2 class="titulo">Formulario</h2>
 
     <form method="POST" action="insertar.php">
 
